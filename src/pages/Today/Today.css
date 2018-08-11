@@ -1,0 +1,26 @@
+.days li {
+	flex: auto;
+	color: #FFF;
+}
+.days li.active {
+	color: #40767E;
+}
+.day-content {
+	position: relative;
+}
+.day-content:before {
+	content: '';
+	position: absolute;
+	border-top: 0 solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #fff;
+	border-left: 20px solid transparent;
+	top: -20px;
+	left: 70px;
+}
+
+@media (max-width: 768px) {
+	.days li h3 {
+		font-size: 18px;
+	}
+}
